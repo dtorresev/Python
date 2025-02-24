@@ -1,0 +1,10 @@
+import cv2
+img = cv2.imread("gatito.jpeg",cv2.IMREAD_COLOR)
+cv2.imshow("image",img)
+cv2.waitKey(0)
+print(img.shape)
+img[10:110, 10:110,:] = [255,0,0] #rgb
+cv2.imshow("image",img)
+cv2.waitKey(0)
+
+cv2.imwrite("gatito_nuevo.jpeg",img)
