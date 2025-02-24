@@ -1,0 +1,1 @@
+print("Hi, please help me pass this assignment, good day")
